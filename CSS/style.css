@@ -24,7 +24,11 @@ ul li a{
     border: 1px solid rgba(255, 255, 255, 0.753);
     transition: 0.6s ease;
 }
+<<<<<<< HEAD
 ul li a:hover{ 
+=======
+ul li a:hover{
+>>>>>>> 74f238b0565bd651926751baef071ec29d2f1bb5
     background-color: #fff;
     color: #000;
 }
