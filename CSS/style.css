@@ -37,7 +37,8 @@ ul li.active a{
 .logo img{
     float: left;
     width: 200px;
-    height: 100px;
+    height: 80px;
+    padding: 13px;
     
 
 }
