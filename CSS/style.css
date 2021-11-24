@@ -36,12 +36,12 @@ ul li.active a{
 
 .logo img{
     float: left;
-    width: 150px;
-    height: auto;
+    width: 200px;
+    height: 100px;
+    
 
 }
 
 .main{
-    max-width: 1200px;
     margin: auto;
 }
