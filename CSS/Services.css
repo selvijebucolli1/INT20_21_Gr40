@@ -1,6 +1,14 @@
-*{
+*
+{
     margin: 0;
     padding: 0;
+}
+.logo img{
+    float: left;
+    width: 120px;
+    height: 80px;
+    padding: 13px;
+    margin-bottom: 50px;
 }
 
 html{ 
