@@ -141,6 +141,18 @@ padding-bottom: 40px;
 font-size: 18px;
 
   }
+  table,th, td{
+    border-right: 1px solid rgb(255, 255, 255);
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+    border-spacing: 5px;
+    background-color: none;
+    
+color: rgb(41, 41, 41);
+  }
+  td:hover {background-color: rgba(92, 90, 90, 0.055);}
+
 
 img {
     transition: transform .3s ease;
