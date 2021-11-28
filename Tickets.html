@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy tickets</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Tickets.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+ <body>
+    <div class="container">
+      <div class="book">
+        <div class="description">
+          <h1><strong>Book</strong> your Ride</h1>
+          <p>
+              Booking your tickets at TMP is very simple,fast and secure.<br>
+            You can book your tickets from anywhere in the world and receive them via email.<br>
+        Please fill in your information in order to continue booking your ticket. </p>
+            
+
+          <div class="quote">
+            <p>
+                You can print at home your e-ticket at the end of your order.
+            </p>
+          </div>
+          <ul>
+            <li>Super reliable service</li>
+            <li>24/7 customer service</li>
+            <li>Refundable tickets</li>
+            <li>Mobile ticketing</li>
+            <li>Instant confirmation</li>
+          </ul>
+        </div>
+        <div class="form">
+          <form>
+            <div class="ticket details">
+              <select id="Availablevenues" name="Availablevenues">
+                <option value="0">Available Venues </option>
+                <option value="0">Gorge Amphitheatre</option>
+                <option value="0">House of Blues Anaheim</option>
+                <option value="0">The Rave / Eagles Club</option>
+                <option value="0">Ascend Amphitheater</option>
+                <option value="0">Huntington Center</option>
+                <option value="0">The Xfinity Center</option>
+                <option value="0">Sioux Falls Convention Center</option>
+                
+              </select>
+            </div>
+            <div class="details2">
+                <span class="flaticon-calendar"></span>
+                <span class="selectdates"> Select dates</span>
+            </div>
+            <div class="details2">
+              <span class="flaticon-calendar"></span>
+              <input type="date" placeholder="Select Date">
+            </div>
+            
+            <div class="details2">
+              <span class="flaticon-user"></span>
+              <input type="text" placeholder="Full Name">
+            </div>
+            <div class="details2">
+              <span class="flaticon-email"></span>
+              <input type="email" placeholder="Email">
+            </div>
+            <div class="selecttickets">Select Tickets </div>
+
+            <div class="ticket details">
+              <div class="ticketprice">
+            
+                <span class="flaticon-taxi"> Regular</span>
+                <input type="radio" name="plan">
+                <h2>$60</h2>
+                <span>1 Ticket</span>
+              </div>
+              <div class="ticketprice">
+                <span class="flaticon-taxi"> Pro</span>
+                <input type="radio" name="plan">
+                <h2>$100</h2>
+                <span>2 Tickets</span>
+              </div>
+              <div class="ticketprice">
+                <span class="flaticon-taxi"> Advance</span>
+                <input type="radio" name="plan">
+                <h2>$180</h2>
+                <span>4 Tickets</span>
+              </div>
+            </div>
+            <button class="buyticket">Buy Ticket</button>
+            <button class="cancel">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
