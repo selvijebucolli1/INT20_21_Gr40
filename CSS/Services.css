@@ -141,8 +141,19 @@ margin-left: 40px;
 margin-bottom:20px;
 font-size: 18px;
 color: rgb(41, 41, 41);
-
   }
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+transform: scale(1.1)
+}
+.ctn:hover {
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px black;
+}
+
 
  
 
