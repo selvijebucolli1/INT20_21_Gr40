@@ -73,17 +73,17 @@ border-radius: 30px;
     transform:translate(-50%,-50%);
     font-size: 18px;
 }
-ul{
+ol{
     margin-top: -40px;
     margin-bottom: 100px;
     float:center;
     list-style-type: none;
     text-align: center;
 }
-ul li{
+ol li{
     display: inline-block;
 }
-ul li a{
+ol li a{
     background-color: rgba(0, 0, 0, 0.596);
     text-decoration: none;
     color:rgb(255, 255, 255);
@@ -92,11 +92,11 @@ ul li a{
     font-size: 17px;
 
 }
-ul li a:hover{
+ol li a:hover{
     background-color: rgba(255, 255, 255, 0.863);
     color: rgb(0, 0, 0);
 }
-.popularquestions{
+#popularquestions{
 
 color:rgb(29, 97, 153);
 margin-left:260px;

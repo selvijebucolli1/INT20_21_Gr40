@@ -53,11 +53,11 @@ border-radius: 30px;
    border-radius: 30px;
    transition: .5s;  
  }
- .social-icons{
+ #social-icons{
      margin: 30px auto;
      text-align: center;
  }
- .social-icons img{
+ #social-icons img{
      width: 30px; 
      margin: 0 12px;
      box-shadow: 0 0 20px 0 #7f7f7f3d;
