@@ -95,7 +95,7 @@ section {
     color: #49497e;
 }
 .row {
-display: flex;
+display: flex; 
 align-items: center;
 width: 100%;
 justify-content: space-between;
@@ -160,6 +160,14 @@ margin-top: 40px;
 .image-col {
  width: 70%;   
  margin-left: 180px;
+}
+.lists {
+text-align: left;
+margin-bottom: 20px;
+justify-content: space-evenly;
+}
+.lists dl dt{
+    margin-bottom: -10px;
 }
 .tours .image-gallery{
 display: flex;
