@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
 *{ 
     margin: 0;
     padding: 0;
-    font-family: Century Gothic;
+    box-sizing: border-box;
 }
-header{
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/4.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px; 
+    color: whitesmoke;
 }
 ul{
     float: right;
@@ -33,33 +38,51 @@ ul li.active a{
     background-color: #fff;
     color: #000;
 }
-
 .logo img{
     float: left;
-    width: 120px;
-    height: 80px;
-    padding: 13px;
+    width: 140px;
+    height: 100px;
+    padding: 10px;
     margin-bottom: 50px;
 }
-.main{
-    margin: auto;
+
+header{
+width: 100vw;
+height: 100vh;
+background-image:url(../images/4.jpg);
+background-position: bottom;
+background-size: cover;
+display: flex;
+align-items: flex-end;
+justify-content: center;
 }
-
-
-.main-container{
-     margin : 0;
-     padding: 0;
-     background : #fff;
-   
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
 }
-
-ul{
-
-    width:100%;
-    margin :0 ;
-    padding: 0;
-    overflow: hidden;  
+.header-content h2{
+    font-size: 4vmin;
 }
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+<<<<<<< HEAD
 
 ul a {
 background: #7f8c8d;
@@ -293,3 +316,5 @@ p {
 
 
 
+=======
+>>>>>>> b98f2cccdc9f08e85a683484728e69adc606d29d

@@ -1,92 +1,65 @@
-<!DOCTYPE html>
-<html  lang="en">
+<html>
   <head>
+      <title> Login and Signin Form</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TMP - Login</title>
    <link rel="stylesheet" type="text/css" href="../CSS/Login.css">
-
    </head> 
    <body>
-     <header>
+     
+     <div class="hero">
+        <header>
             <div class="main">
               <div class="logo">
                <a href="../index.html"><img src="../images/logo2.png"/></a>
-              </div>
-         <ul>
-          <li class="active">
-<li><a href="index.html">Home</a></li>
-<li><a href="Services.html ">Services</a></li>
-<li><a href="About.html">About</a></li>
-<li><a href="Contact.html">Contact</a></li>
-<li><a href="Login.html">Sign up/Log in</a></li>
-<input type="search" id="search" placeholder="Search..."
-<button type="submit"><i class="fa fa-search"></i></button>
-</ul>
+              </div>       
 </div>
      </header>
+         <div class="form-box">
+<div class= "button-box">
+<div id="btn"></div>    
+<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+<button type="button" class="toggle-btn" onclick="register()">Register</button>
+</div>
+<div id="social-icons">
+  <a href="https://facebook.com"target="_blank"><img src="../images/fb.png"></a>
+  <a href="https://twitter.com"target="_blank"><img src="../images/tw.png"></a>
+  <a href="https://google.com"target="_blank"><img src="../images/gp.png"></a>
+</div>
+<form id="login" class="input-group">
+<input type="text" class="input-field" placeholder="User Id" required>
+<input type="password" class="input-field" placeholder="Enter Password"required>
+<input type="checkbox" class="chech-box"><span>Remember Password</span>
+<a href="../index.html"button type="submit" class="submit-btn">Log in</button></a>
+</form>
+<form id="register" class="input-group">
+    <input type="text" class="input-field" placeholder="User Id" required>
+    <input type="email" class="input-field" placeholder="Email Id" required>
+    <input type="password" class="input-field" placeholder="Enter Password"required>
+    <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+    <a href="../index.html"button type="submit" class="submit-btn">Register</button></a>
+    </form>
+         </div>
+         </div>
+         <script> 
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
 
-
-
-    <fieldset>
-<legend>Sign Up </legend>
-<label>USername:<br />
-    <input type="text" name="USERNAME"/></label><br />
-<label>Name:<br />
-<input type="text" name="NAME"/></label><br />
-<label>Last Name:<br />
-    <input type="text" name="LASTNAME"/></label><br />
-    <label>Email:<br />
-        <input type="text" name="EMAIL"/></label><br />
-        <label>Gender :<br />
-            <!--Drop down boxes perdor-->
-            <input type="text" name="GENDER"/></label><br />
-            <label>Age:<br />
-                <input type="text" name="AGE"/></label><br />
-        <label>Password:<br />
-            <input type="password" name="PASSWORD"/></label><br />
-            <label>Confirm Password :<br />
-                <input type="password" name="CONFIRMPASSWORD"/></label><br />
-
-                <legend>Already have an account?</legend>
-                <label>Email:<br />
-                    <input type="text" name="EMAIL"/></label><br />
-                    <label>Password:<br />
-                        <input type="password" name="PASSWORD"/></label><br />
-                    
-
-    </fieldset>
-       
-    <footer>
-        <table style="width:100%">
-            <tr style="height:80px">
-          
-          <th>Help</th>
-          <th>Work with us</th>
-          <th>Browse Tickets</th>
-          <th></th>
-          </tr>
-          
-          <tr>
-              <td>Customer Service</td>
-              <td>Ticket Your Event</td>
-              <td>Music Tickets</td>
-          
-          </tr>
-          <tr>
-              <td>Newsletter</td>
-              <td>Group Bookings</td>
-              <td>Theatre Tickets</td>
-          
-          </tr>
-          <tr>
-              <td></td>
-              <td>See Coaches</td>
-              <td>Dance and Clubs</td>
-          
-          </tr>
-          </table>
-    </footer>
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left= "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left= "0";
+        }
+        </script>
+     </div> 
+    
    </body>
 </html>
