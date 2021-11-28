@@ -85,9 +85,11 @@ border-radius: 30px;
 .submit-btn{
    width: 85%;
    padding: 10px 30px;
-   cursor:pointer;
+   cursor: pointer;
    display: block;
    margin: auto;
+   text-align: center;
+   color: black;
    background: linear-gradient(to right, #ff105f, #ffad06);
    border: 0;
    outline: none;
