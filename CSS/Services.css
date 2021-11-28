@@ -10,7 +10,7 @@
     padding: 13px;
     margin-bottom: 50px;
 }
-
+#popularquestions p::before {content: "Popular ";}
 html{ 
     background-color: rgba(241, 231, 231, 0.945);
     color: rgb(0, 0, 0);

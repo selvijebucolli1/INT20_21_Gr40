@@ -80,6 +80,7 @@ justify-content: center;
     margin-bottom: 30px;
 }
 .ctn {
+    margin-bottom: 50px;
     padding: 8px 15px;
     background: #fc036b;
     border-radius: 30px;
@@ -87,7 +88,8 @@ justify-content: center;
 }
 section {
     width: 80%;
-    margin: 80px auto;
+    margin: 8px auto;
+    
 }
 .title {
     text-align: center;
@@ -95,7 +97,8 @@ section {
     color: #49497e;
 }
 .row {
-display: flex;
+    margin-top: 30px;
+display: flex; 
 align-items: center;
 width: 100%;
 justify-content: space-between;
@@ -160,6 +163,14 @@ margin-top: 40px;
 .image-col {
  width: 70%;   
  margin-left: 180px;
+}
+.lists {
+text-align: left;
+margin-bottom: 20px;
+justify-content: space-evenly;
+}
+.lists dl dt{
+    margin-bottom: -10px;
 }
 .tours .image-gallery{
 display: flex;
