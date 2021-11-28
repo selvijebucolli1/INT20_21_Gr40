@@ -92,12 +92,13 @@ section {
     
 }
 .title {
+    margin-top: 70px;
     text-align: center;
     font-size: 4vmin;
     color: #49497e;
 }
 .row {
-    margin-top: 30px;
+ margin-top: 70px;
 display: flex; 
 align-items: center;
 width: 100%;
@@ -110,6 +111,7 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
 }
 .events .row {
     margin-top: 50px;  
