@@ -141,15 +141,21 @@ padding-bottom: 40px;
 font-size: 18px;
 
   }
-  table,th, td{
-    border-right: 1px solid rgb(255, 255, 255);
-    width: 30%;
-    text-align: center;
-    padding: 5px;
-    border-spacing: 5px;
-    background-color: none;
-    
+
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+transform: scale(1.1)
+}
+.ctn:hover {
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px black;
+}
+
+
  
-  }
-  td:hover {background-color: rgba(255, 255, 255, 0.055);}
+
+
 
