@@ -1,12 +1,4 @@
 *
-.logo img{
-    float: left;
-    padding: 13px;
-    margin-bottom: 50px;
-
-}
-
-*
 body {
     background-image: url(../images/about2.png);
     background-size: cover;
@@ -84,8 +76,4 @@ transform: scale(1.1)
     }
     .ctn:hover {
         background: whitesmoke;
-        color: #fc036b;
-        box-shadow: 2px 2px 5px black;
     }
-    
-
