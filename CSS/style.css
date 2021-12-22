@@ -8,7 +8,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
+
     width: 100%;
     justify-content: space-between;
     padding: 20px; 
@@ -47,6 +47,7 @@ ul li.active a{
     height: 100px;
     padding: 10px;
     margin-bottom: 50px;
+    border: none;
 }
 
 header{
@@ -197,6 +198,10 @@ color: #484872;
 }
 .content-col .ctn {
     margin-left: -100px;
+}
+/*Styling Link*/
+a{
+    text-decoration: none;
 }
 .footer {
     width: 100%;
