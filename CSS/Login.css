@@ -1,23 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
-
-.hero{
-    height:100%;
-    width:100%;
+body{
     background-image:url(../images/banner.jpg);
-    background-position: center;
     background-size: cover;
-    position:absolute;
+    align-items: center;
+    letter-spacing: 1px;
+    color: white;
+    margin:0px;
+   overflow-x: hidden;
+}
+
+.navbar{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 60px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px; 
+    color: whitesmoke;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.733);
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.6s ease;
+}
+body , html {
+    overflow-x: hidden;
+}
+ul li a:hover{ 
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
 }
 .logo img{
     float: left;
-    width: 120px;
-    height: 80px;
-    padding: 13px;
+    width: 140px;
+    height: 100px;
+    padding: 10px;
     margin-bottom: 50px;
+    border: none;
 }
 .form-box{
     width: 380px;
