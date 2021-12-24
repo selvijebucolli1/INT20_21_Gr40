@@ -1,4 +1,4 @@
-*
+* 
 body {
     background-image: url(../images/about2.png);
     background-size: cover;
@@ -6,7 +6,7 @@ body {
     letter-spacing: 1px;
     color: white;
     margin:0px;
-    overflow-x: hidden;
+   overflow-x: hidden;
 }
 .navbar{
     position: absolute;
