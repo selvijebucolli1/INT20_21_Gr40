@@ -115,7 +115,7 @@
             var ctx = canvas.getContext("2d");
         
             //Krijimi i gradientit
-           
+           //KerkesaCanvasGradient
             var grd = ctx.createLinearGradient(20,0,500,0);
             grd.addColorStop(1, "#e91e72b4");
             grd.addColorStop(0, "#080808c9");
@@ -126,11 +126,19 @@
             ctx.fillRect(10, 10,1500,60);
            var font= canvas.getContext("2d");
            //Krijimi i tekstit
+           //KerkesaCanvasText
            font.font = "15px Arial";
            font.fillStyle = "black";
            font.textAlign = "center";
-
             font.fillText("Copyright © 2020 Ticket Marketplace", 600, 30);
+
+            //KerkesaCanvasPath
+             ctx.beginPath();
+             ctx.lineWidth = "5";
+             ctx.strokeStyle = "black"; // Green path
+             ctx.moveTo(400, 40);
+             ctx.lineTo(800, 40);
+             ctx.stroke();
 
     </script>
 

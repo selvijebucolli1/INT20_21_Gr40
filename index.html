@@ -96,6 +96,31 @@
 </div>
 </div>
 </section>
+
+<canvas id="Canvas" width="800" height="300"
+style="border:1px solid #d3d3d3;"></canvas>
+<script>
+  //KerkesaCanvasIMG
+  window.onload = function() {
+
+        //marrja e fotos.
+        var img = new Image();
+        img.src = 'images/canvasindex.jpg';
+
+        // pritja derisa fotoja gets loaded.
+        img.onload = function () {
+            fill_canvas(img);
+        }
+
+        function fill_canvas(img) {
+      var canvas = document.getElementById("Canvas");
+      var ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 10, 10,800,300);
+  }
+}
+  </script>
+
+
 <section class="footer">
 <p>4671 Sugar Camp Road, Owatonna, Minnesota, 55060</p>
 <p>Copyright © 2020 Ticket Marketplace</p>
