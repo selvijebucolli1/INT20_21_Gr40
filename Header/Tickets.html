@@ -9,6 +9,13 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
  <body>
+   <header>
+  <svg height="130" width="200">
+    <polygon points="100,10 40,198 190,78 10,78 160,198"
+    style="fill:rgba(32, 25, 59, 0.589);stroke:rgb(212, 114, 212);stroke-width:3;" />
+    <text fill="#ffffff" font-size="45" font-family="Verdana" x="55" y="120">TMP</text>
+  </svg>
+</header>
     <div class="container">
       <div class="book">
         <div class="description">
@@ -87,11 +94,21 @@
                 <span>4 Tickets</span>
               </div>
             </div>
-            <button class="buyticket">Buy Ticket</button>
+            <button class="buyticket" onclick="myFunction()">Buy Ticket</button>
             <button class="cancel">Cancel</button>
           </form>
         </div>
       </div>
     </div>
+    <svg class="svg2"height="200" width="200">
+      <polygon points="100,10 40,198 190,78 10,78 160,198"
+      style="fill:rgba(32, 25, 59, 0.589);stroke:rgb(212, 114, 212);stroke-width:3;" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="55" y="120">TMP</text>
+    </svg>
+    <script>
+function myFunction() {
+  alert("Are you sure you want to proceed?");
+}
+    </script>
   </body>
 </html>
