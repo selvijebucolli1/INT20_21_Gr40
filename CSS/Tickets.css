@@ -1,17 +1,21 @@
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 body{background-image: linear-gradient(rgba(36, 25, 25, 0.226),rgba(27, 11, 65, 0.719)),url(../images/img5.jpg);
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    width: 95vw;
+    height: 112vh;
     font-family: 'Roboto',sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 3% 0;
+    box-sizing: border-box;
+}
+header {
+    height: 800px;
+    width: 200px;
+    display:inline-block;
+    position: absolute;
 }
 .container {
     width: 80%;
@@ -168,4 +172,10 @@ button.cancel {
 }
 button.cancel:hover {
     background-color: rgb(5, 5, 5);
+  }
+  .svg2{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 250px;
   }
