@@ -17,11 +17,11 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-
+text-align: right;
     width: 100%;
     justify-content: space-between;
     padding: 20px; 
-    color: palevioletred;
+    color: pink;
 }
 ul{
     float: right;
@@ -59,8 +59,8 @@ ul li.active a{
     border: none;
 }
 .video {
-    margin: 100px 80px 80px 250px;
-    padding: 10px 8px 10px 8px;
+    margin: 100px 100px 80px 20px;
+    padding: 10px 100px 0 80px;
 }
 img {
     transition: transform .3s ease;
