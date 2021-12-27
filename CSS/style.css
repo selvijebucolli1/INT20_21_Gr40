@@ -107,6 +107,9 @@ justify-content: space-between;
 }
 .row .col img {
     width: 80%;
+    border-radius: 25% 10%;
+    box-shadow: 10px 5px 5px grey;
+    
 }
 .row .col {
     display: flex;
@@ -166,6 +169,7 @@ margin-top: 40px;
 .image-col {
  width: 70%;   
  margin-left: 180px;
+
 }
 .lists {
 text-align: left;
@@ -180,10 +184,12 @@ display: flex;
 flex-wrap: wrap;
 width: 100%;
 align-items: center;
+
 }
 .image-gallery img {
 max-width: 300px;
 margin: 10px;
+
 }
 .content-col h1 {
 font-size: 7vmin;
