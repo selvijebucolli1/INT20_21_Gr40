@@ -7,6 +7,15 @@
     <title>Buy tickets</title>
     <link rel="stylesheet" type="text/css" href="../CSS/Tickets.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+      function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+      </script>
 </head>
  <body>
 </nav></div>
@@ -34,7 +43,7 @@
           </ul>
         </div>
         <div class="form">
-          <form>
+          <form name="myForm" onsubmit="return validateForm()" method="post">
             <div class="ticket details">
               <select id="Availablevenues" name="Availablevenues">
                 <option value="0">Available Venues </option>
