@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <style>
+    #div1, #div2 {
+      float: left;
+      width: 100px;
+      height: 35px;
+      margin: 10px;
+      padding: 10px;
+      border: 10px black;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMP - Video </title>
+   <link rel="stylesheet" type="text/css" href="../CSS/Video.css">
+   <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("img", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("img");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="../index.html"><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="../images/logo2.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+      </div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div></a>
+    </div>
+    <ul active>
+     <li class="active">
+<li><a href="../index.html">Home</a></li>
+<li><a href="Services.html ">Services</a></li>
+<li><a class="current" href="About.html">About</c></a>
+<li><a href="Contact.html">Contact</c></a>
+<li><a href="Login.html">Sign up/Log in</c></a>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<input type="search" id="search" placeholder="Search...">
+<button type="submit"><i class="fas fa-search"></i></button>
+</ul active>
+<div class="video">
+<video controls width=1000>
+  <source src="../video/video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+  </video>
+  </div>
+</div></nav>
+</body>
+</html>
