@@ -136,20 +136,24 @@
     road: " Sugar Camp Road,",
     city: " Owatonna,",
     state:" Minnesota, ",
-    postalcode:" 55060"
+    postalcode:" 55060",
   };
-  document.getElementById("Address").innerHTML = 4671 +
+  let num = 4671;
+let n = num.toString();
+  document.getElementById("Address").innerHTML = n +
   Address.road + Address.city + Address.state + Address.postalcode;
   
   
    let symbol= "© ";
    const y = new Date();
- 
-   let company= " Ticket Marketplace";
-    
-  
+   let company= " Ticket Marketplace ";
+   let enterprise="Enterprise";
+   
+//NaN
   document.getElementById("Copyright").innerHTML ="Copyright " +
- symbol + y.getFullYear() +company;
-  </script>
+ symbol + y.getFullYear() +company +isNaN(enterprise);
+
+
+</script>
 </body>
 </html>
