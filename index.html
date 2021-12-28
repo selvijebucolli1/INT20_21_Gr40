@@ -124,8 +124,29 @@
 
 <canvas id="Canvas" width="800" height="300"style="border:1px solid #d3d3d3;"></canvas>
 <section class="footer">
-<p>4671 Sugar Camp Road, Owatonna, Minnesota, 55060</p>
-<p>Copyright © 2020 Ticket Marketplace</p>
+<p id="Address">4671 Sugar Camp Road, Owatonna, Minnesota, 55060</p>
+<p id="Copyright">Copyright © 2020 Ticket Marketplace</p>
 </section>
+<script>
+  const Address = {
+    road: " Sugar Camp Road,",
+    city: " Owatonna,",
+    state:" Minnesota, ",
+    postalcode:" 55060"
+
+    
+  };
+  document.getElementById("Address").innerHTML = 4671 +
+  Address.road + Address.city + Address.state + Address.postalcode;
+  
+  
+   let symbol= "© ";
+   let year= 2020;
+   let company= " Ticket Marketplace";
+    
+  
+  document.getElementById("Copyright").innerHTML ="Copyright " +
+ symbol + year +company;
+  </script>
 </body>
 </html>
