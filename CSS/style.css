@@ -114,8 +114,8 @@ justify-content: space-between;
     border-radius: 25% 10%;
     box-shadow: 10px 5px 5px grey;
     transform: translate(120px, 50%);
-     transform: rotateY(25deg);
-     transform: rotateX(25deg) ;
+     transform: rotateY(30deg);
+     transform: rotateX(30deg);
     }
     .row .col img {
         transition: transform .3s ease;
