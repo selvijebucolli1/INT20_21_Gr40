@@ -6,8 +6,8 @@
     font-family: sans-serif;
 }
 body{
-    
-    animation: move 3s infinite;
+    background-image: url('/images/img10.jpg') ;
+
     background-size: cover;
     align-items: center;
     letter-spacing: 1px;
@@ -17,10 +17,10 @@ body{
 }
 
 @keyframes move  {
-    0%   {background-color: rgb(233, 230, 230)  ;}
-    25%  {background-color: rgb(214, 202, 202)  ;}
-    50%  {background-color: rgb(144, 119, 146);}
-    100% {background-color: rgb(109, 43, 109) ; }
+    0%   {background-color: rgba(255, 254, 254, 0)  ;}
+    25%  {background-color: rgba(255, 255, 255, 0.333)  ;}
+    50%  {background-color: rgba(255, 255, 255, 0.666);}
+    100% {background-color: rgb(255, 255, 255) ; }
   } 
 
 .horizontal-gradient {
@@ -77,6 +77,9 @@ ul li.active a{
     border: none;
 }
 .form-box{
+    animation: move 6s infinite;
+    border: 1px solid black;
+    border-radius: 10px;
     width: 380px;
     height: 480px;
     position: relative;
@@ -138,7 +141,9 @@ border-radius: 30px;
     outline: none;
     background: transparent;
 }
-
+::placeholder {
+    color: rgb(0, 0, 0);
+}
 .submit-btn{
    width: 85%;
    padding: 10px 30px;
@@ -154,6 +159,7 @@ border-radius: 30px;
 }
 .chech-box{
    margin: 30px 10px 30px 0;
+   color: black;
 }
 span{
    color: #777;
