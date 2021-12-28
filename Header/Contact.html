@@ -6,15 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
     " integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
    <link href="../CSS/Contact.css" rel="stylesheet" type="text/css">
-   <script>
-    function validateForm() {
-      let x = document.forms["myForm"]["fname"].value;
-      if (x == "") {
-        alert("Name must be filled out");
-        return false;
-      }
-    }
-    </script>
+
+   <script defer src="../javascript/contact.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -66,19 +59,21 @@
                 </div>
             </div>
             <div class="contactForm">
-            <form name="myForm" onsubmit="return validateForm()" method="post" autocomplete="on">
+            <form name="ContactForm" onsubmit="return validateForm()" action="/examples/actions/confirmation.php" method="post">>
                 <h2>Send Message</h2>
                 <keygen name="PublicKey" keytype="RSA">
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input type="text" name="name" >
                     <span>Full Name</span>
+                    <div class="error" id="nameErr"></div>
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input type="text" name="email" >
                     <span>Email</span>
+                    <div class="error" id="emailErr"></div>
                     </div>
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Type your Message...</span>
+                 <div class="inputBox">
+                    <input type="text" name="message">
+                    <span>Type your Message...</span>
                 </div>
                 <div class="file">
    <input type="file" id="files" name="" multiple><br>
