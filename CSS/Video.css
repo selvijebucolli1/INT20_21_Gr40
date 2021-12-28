@@ -79,3 +79,6 @@ transform: scale(1.1)
 datalist {
     display: none;
 }
+.color {
+    color: pink;
+}
