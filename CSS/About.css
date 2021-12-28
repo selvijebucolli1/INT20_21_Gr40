@@ -108,6 +108,7 @@ transform: scale(1.1)
         background-color: none;
     color: white;
     column-gap: 30px;
+    column-count:1 ;
       }
       td:hover {background-color: rgba(236, 199, 199, 0.384);}
     .adress {
@@ -115,15 +116,13 @@ transform: scale(1.1)
         font-weight: 1000;
 }
 
-    
-  
     to {
       margin-left: 0%;
       width: 100%;
     }
   
 
-      
+    
      
     
     
