@@ -51,27 +51,29 @@
 <input type="search" id="search" placeholder="Search...">
 <button type="submit"><i class="fas fa-search"></i></button>
 </ul active>
+<div class="text">
+  <br><br><br>
+<script type = "text/javascript" color="black">
+  var now = new Date(); 
+  var hour = now.getHours(); 
+  if ( hour < 12 ) 
+  document.write( "<h1>Good Morning, please find attached the video down below:" );
+  else
+  {
+  hour = hour - 12; 
+  if ( hour <= 6 )
+  document.write( "<h1>Good Afternoon, please find attached the video down below:" );
+  else
+  document.write( "<h1>Good Evening, please find attached the video down below:" );
+  }
+  </script>
 <div class="video">
 <video controls width=1000>
   <source src="../video/video.mp4" type="video/mp4">
   Your browser does not support the video element.
   </video>
-  <p id="demo"></p>
-
-<script>
-let text = "Ticket Marketplace";
-let pattern = /e/;
-let result = pattern.test(text);
-document.getElementById("demo").innerHTML = result;
-</script>
-<script>
-var string  = "Ticketmarketplace is the best marketplace online at the moment.";  
-         var obj1 = new RegExp( "online", "s" );  
-           
-         var result1 = obj1.exec(string);  
-        document.write("Returned value : " +  result1);  
-</script>
+</nav>
   </div>
-</div></nav>
+</div>
 </body>
 </html>
