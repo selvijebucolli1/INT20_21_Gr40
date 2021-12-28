@@ -128,8 +128,8 @@
 
 <canvas id="Canvas" width="800" height="300"style="border:1px solid #d3d3d3;"></canvas>
 <section class="footer">
-<p id="Address">4671 Sugar Camp Road, Owatonna, Minnesota, 55060</p>
-<p id="Copyright">Copyright © 2020 Ticket Marketplace</p>
+<p id="Address"></p>
+<p id="Copyright"></p>
 </section>
 <script>
   const Address = {
@@ -143,12 +143,13 @@
   
   
    let symbol= "© ";
-   let year= 2020;
+   const y = new Date();
+ 
    let company= " Ticket Marketplace";
     
   
   document.getElementById("Copyright").innerHTML ="Copyright " +
- symbol + year +company;
+ symbol + y.getFullYear() +company;
   </script>
 </body>
 </html>
