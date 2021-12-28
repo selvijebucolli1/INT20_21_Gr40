@@ -59,12 +59,18 @@
   <p id="demo"></p>
 
 <script>
-let text = "The best things in life are free";
+let text = "Ticket Marketplace";
 let pattern = /e/;
 let result = pattern.test(text);
 document.getElementById("demo").innerHTML = result;
 </script>
-
+<script>
+var string  = "Ticketmarketplace is the best marketplace online at the moment.";  
+         var obj1 = new RegExp( "online", "s" );  
+           
+         var result1 = obj1.exec(string);  
+        document.write("Returned value : " +  result1);  
+</script>
   </div>
 </div></nav>
 </body>
