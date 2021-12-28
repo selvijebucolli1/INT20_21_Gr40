@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 .navbar{
     position: absolute;
@@ -48,7 +49,36 @@ ul li.active a{
     padding: 10px;
     margin-bottom: 50px;
     border: none;
+    transform: translate(120px, 40%);
+    transform: scale(1, 0.5);
+    transform: rotate(0.4 turn);
+    transform: skew(20deg, 10deg);
+    transform: scale(0.8) ;
+    transform: rotateX(10deg);
+    transform: rotateY(10deg);
+
 }
+
+.logo img --translate-neg-z {
+    transform: translateZ(-200px);
+  }
+  
+  .logo img --translate-pos-z {
+    transform: translateZ(200px);
+  }
+  
+  .logo img --rotate-x {
+    transform: rotateX(45deg);
+  }
+  
+  .logo img --rotate-y {
+    transform: rotateY(45deg);
+  }
+  
+  .logo img --rotate-z {
+    transform: rotateZ(45deg);
+}
+    
 
 header{
 width: 100vw;
@@ -107,6 +137,9 @@ justify-content: space-between;
 }
 .row .col img {
     width: 90%;
+    border-radius: 25% 10%;
+    box-shadow: 10px 5px 5px grey;
+    
 }
 .row .col {
     display: flex;
@@ -166,6 +199,7 @@ margin-top: 40px;
 .image-col {
  width: 70%;   
  margin-left: 180px;
+
 }
 .lists {
 text-align: left;
@@ -180,10 +214,12 @@ display: flex;
 flex-wrap: wrap;
 width: 100%;
 align-items: center;
+
 }
 .image-gallery img {
 max-width: 300px;
 margin: 10px;
+
 }
 .content-col h1 {
 font-size: 7vmin;

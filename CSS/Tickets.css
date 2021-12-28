@@ -67,6 +67,9 @@ header {
 .form{
     background-color: rgb(44, 34, 51);
     background-image: linear-gradient(rgba(255, 255, 255, 0.226),rgba(139, 27, 132, 0.719)),url(../images/contactus.jpg);
+    background-size: contain;
+background-repeat: no-repeat; 
+    
   }
  .form form{
     color:rgb(0, 0, 0);

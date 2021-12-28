@@ -6,22 +6,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
     " integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
    <link href="../CSS/Contact.css" rel="stylesheet" type="text/css">
+   <script>
+    function validateForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-         <a href="index.html"><img src="images/logo2.png"/></a>
+         <a href="../index.html"><img src="../images/logo2.png"/></a>
         </div>
         <ul active>
          <li class="active">
-  <li><a href="/index.html">Home</a></li>
+  <li><a href="../index.html">Home</a></li>
   <li><a href="Services.html ">Services</a></li>
   <li><a href="About.html">About</c></a>
   <li><a class="current" href="Contact.html">Contact</c></a>
   <li><a href="Login.html">Sign up/Log in</c></a>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <input type="search" id="search" placeholder="Search...">
-  <button type="submit"><i class="fas fa-search"></i></button>
+  <output button type="submit"><i class="fas fa-search"></i></output>
   </ul active>
   
   </nav></div>
@@ -57,18 +66,18 @@
                 </div>
             </div>
             <div class="contactForm">
-            <form>
+            <form name="myForm" onsubmit="return validateForm()" method="post">
                 <h2>Send Message</h2>
+                <keygen name="PublicKey" keytype="RSA">
                 <div class="inputBox">
                     <input type="text" name="" required="required">
                     <span>Full Name</span>
-                </div>
                 <div class="inputBox">
                     <input type="text" name="" required="required">
                     <span>Email</span>
                     </div>
                     <div class="inputBox">
-                        <textarea required="required"></textarea>
+                        <input type="text" name="" required="required">
                         <span>Type your Message...</span>
                 </div>
                 <div class="inputBox">

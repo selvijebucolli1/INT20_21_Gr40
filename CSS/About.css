@@ -2,6 +2,9 @@
 body {
     background-image: url(../images/about2.png);
     background-size: cover;
+    background-origin: content-box, padding-box;
+    background-position: center;
+    background-repeat: no-repeat;
     align-items: center;
     letter-spacing: 1px;
     color: white;
@@ -28,7 +31,7 @@ ul li{
 }
 ul li a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.733);
+      color: rgba(255, 255, 255, 0.733);
     padding: 5px 20px;
     border: none;
     border-radius: 5px;
@@ -44,8 +47,8 @@ ul li.active a{
 }
 .logo img{
     float: left;
-    width: 140px;
-    height: 100px;
+    width: 120px;
+    height: 80px;
     padding: 10px;
     margin-bottom: 50px;
     border: none;
@@ -59,10 +62,13 @@ ul li.active a{
 }
 .About1TMP {
     text-align: start;
+    text-shadow: rgb(252, 247, 230) 1px 0 10px;
     margin: 0 160px;
+    
 }
 .AboutTMP {
 text-align: start;
+text-shadow: rgb(252, 246, 225) 1px 0 10px;
 }
 img {
     transition: transform .3s ease;
