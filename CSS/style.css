@@ -93,9 +93,6 @@ ul li.active a{
     border: none
 
 }
-
-    
-
 header{
 width: 100vw;
 height: 100vh;
@@ -224,17 +221,14 @@ margin-top: 40px;
 .image-col {
  width: 70%;   
  margin-left: 180px;
- transform: rotate (50deg);
-
-
 
 }
 .lists {
-text-align: left;
-text-shadow:  1px 2px rgb(247, 236, 144);
-margin-bottom: 20px;
-justify-content: space-evenly;
-}
+    text-align: left;
+    text-shadow:  1px 2px rgb(247, 236, 144);
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    }
 .lists dl dt{
     margin-bottom: -10px;
 }
@@ -276,9 +270,6 @@ canvas {
   width: 50%;
   margin-bottom: 30px;;
 }
-
-
-
 .footer {
     width: 100%;
     min-height: 100px;

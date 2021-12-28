@@ -3,8 +3,7 @@
 <head> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TMP - Contact </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
-    " integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
    <link href="../CSS/Contact.css" rel="stylesheet" type="text/css">
 
    <script defer src="../javascript/contact.js"></script>
@@ -21,7 +20,7 @@
   <li><a href="About.html">About</c></a>
   <li><a class="current" href="Contact.html">Contact</c></a>
   <li><a href="Login.html">Sign up/Log in</c></a>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <input type="search" id="search" placeholder="Search...">
   <output button type="submit"><i class="fas fa-search"></i></output>
   </ul active>
@@ -59,25 +58,26 @@
                 </div>
             </div>
             <div class="contactForm">
-            <form name="ContactForm" onsubmit="return validateForm()" action="/examples/actions/confirmation.php" method="post" autocomplete="on">
+            <form name="ContactForm" onsubmit="return validateForm()"  method="post" autocomplete="on">
                 <h2>Send Message</h2>
                 <keygen name="PublicKey" keytype="RSA">
                 <div class="inputBox">
-                    <input type="text" name="name" >
+                    <input type="text" name="" required="required">
                     <span>Full Name</span>
                     <div class="error" id="nameErr"></div>
+                    </div>
                 <div class="inputBox">
-                    <input type="text" name="email" >
+                    <input type="text" name="" required="required">
                     <span>Email</span>
                     <div class="error" id="emailErr"></div>
                     </div>
                  <div class="inputBox">
-                    <input type="text" name="message">
+                    <input type="text" name="" required="required">
                     <span>Type your Message...</span>
                 </div>
                 <div class="file">
-   <input type="file" id="files" name="" multiple><br>
-</div>
+                    <input type="file" id="files" name="" multiple><br>
+                 </div>
                 <div class="inputBox">
                     <input type="submit" name="" value="Send">
 
