@@ -51,9 +51,6 @@ ul li.active a{
     border: none
 
 }
-
-    
-
 header{
 width: 100vw;
 height: 100vh;
@@ -177,18 +174,14 @@ margin-top: 40px;
 .image-col {
  width: 70%;   
  margin-left: 180px;
- transform: translate3d(5px, 0.5%, 3em);
- transform: scale(1.0, 0.5);
-
-
 
 }
 .lists {
-text-align: left;
-text-shadow:  1px 2px rgb(247, 236, 144);
-margin-bottom: 20px;
-justify-content: space-evenly;
-}
+    text-align: left;
+    text-shadow:  1px 2px rgb(247, 236, 144);
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    }
 .lists dl dt{
     margin-bottom: -10px;
 }
@@ -230,9 +223,6 @@ canvas {
   width: 50%;
   margin-bottom: 30px;;
 }
-
-
-
 .footer {
     width: 100%;
     min-height: 100px;
@@ -258,12 +248,11 @@ transform: scale(1.1)
     box-shadow: 2px 2px 5px black;
 }
 figure {
-
-   position: relative;
-   
-   margin-right: 20px;
-}
-figcaption {
-    align-items: center;
-    display: flex;
-}
+    position: relative;
+    
+    margin-right: 20px;
+ }
+ figcaption {
+     align-items: center;
+     display: flex;
+ }
