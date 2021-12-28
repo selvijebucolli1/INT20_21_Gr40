@@ -5,6 +5,48 @@
     box-sizing: border-box;
 
 }
+.scope {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: slid 30s linear infinite;
+  }
+  
+  .scope span {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+  }
+  
+  .scope span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+  }
+  .scope span:hover img {
+    transform: translateY(-50px) scale(1.3);
+  }
+  @keyframes slid {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+  
 .navbar{
     position: absolute;
     top: 0;
@@ -111,10 +153,15 @@ justify-content: space-between;
     border-radius: 25% 10%;
     box-shadow: 10px 5px 5px grey;
     transform: translate(120px, 50%);
-     transform: rotateY(25deg);
-     transform: rotateX(25deg) ;
+     transform: rotateY(30deg);
+     transform: rotateX(30deg);
     }
-
+    .row .col img {
+        transition: transform .3s ease;
+    }
+    .row .col img:hover {
+    transform: scale(1.1);
+    }
 
 .row .col {
     display: flex;
@@ -236,23 +283,20 @@ canvas {
     margin: 20px auto;
 }
 /* Animations */
-img {
-    transition: transform .3s ease;
-}
-img:hover {
-transform: scale(1.1)
-}
+
 .ctn:hover {
     background: whitesmoke;
     color: #fc036b;
     box-shadow: 2px 2px 5px black;
 }
 figure {
-    position: relative;
-    
-    margin-right: 20px;
- }
- figcaption {
-     align-items: center;
-     display: flex;
- }
+
+   position: relative;
+   
+   margin-right: 20px;
+}
+
+figcaption {
+    align-items: center;
+    display: flex;
+}

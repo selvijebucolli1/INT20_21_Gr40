@@ -108,24 +108,34 @@ transform: scale(1.1)
         background-color: none;
     color: white;
     column-gap: 30px;
+    column-count:1 ;
       }
       td:hover {background-color: rgba(236, 199, 199, 0.384);}
     .adress {
         color:#fc036b;
         font-weight: 1000;
+        font-family: Font1;
 }
 
-    
-  
     to {
       margin-left: 0%;
       width: 100%;
     }
   
+    @font-face {
+        font-family: Font1;
+        src: url(/images/font/sansation.italic.ttf);
+    }
 
-      
+    @font-face {
+        font-family: Font2;
+        src: url(/images/font//Shizuru-Regular.ttf);
+    }
+
      
-    
+    .About1 h1 {
+        font-family: Font2;
+    }
     
         
     
