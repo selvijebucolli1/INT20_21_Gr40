@@ -64,11 +64,14 @@ ul li.active a{
     text-align: start;
     text-shadow: rgb(252, 247, 230) 1px 0 10px;
     margin: 0 160px;
+  
     
 }
+
 .AboutTMP {
 text-align: start;
 text-shadow: rgb(252, 246, 225) 1px 0 10px;
+
 }
 img {
     transition: transform .3s ease;
@@ -110,7 +113,21 @@ transform: scale(1.1)
     .adress {
         color:#fc036b;
         font-weight: 1000;
+}
+
+    
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
     }
+  
+
+      
+     
+    
+    
+        
     
     img {
         transition: transform .3s ease;
