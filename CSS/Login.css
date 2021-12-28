@@ -16,8 +16,8 @@ body{
 }
 
 @keyframes move  {
-    0%   {background-color: rgb(233, 230, 230)  ;}
-    25%  {background-color: rgb(214, 202, 202)  ;}
+    0%   {background-color: rgb(140, 83, 148)  ;}
+    25%  {background-color: rgb(177, 127, 202)  ;}
     50%  {background-color: rgb(144, 119, 146);}
     100% {background-color: rgb(109, 43, 109) ; }5
   } 

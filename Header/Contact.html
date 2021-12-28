@@ -59,25 +59,26 @@
                 </div>
             </div>
             <div class="contactForm">
-            <form name="ContactForm" onsubmit="return validateForm()" action="/examples/actions/confirmation.php" method="post" autocomplete="on">
+            <form name="ContactForm" onsubmit="return validateForm()"  method="post" autocomplete="on">
                 <h2>Send Message</h2>
                 <keygen name="PublicKey" keytype="RSA">
                 <div class="inputBox">
-                    <input type="text" name="name" >
+                    <input type="text" name="" required="required">
                     <span>Full Name</span>
                     <div class="error" id="nameErr"></div>
+                    </div>
                 <div class="inputBox">
-                    <input type="text" name="email" >
+                    <input type="text" name="" required="required">
                     <span>Email</span>
                     <div class="error" id="emailErr"></div>
                     </div>
                  <div class="inputBox">
-                    <input type="text" name="message">
+                    <input type="text" name="" required="required">
                     <span>Type your Message...</span>
                 </div>
                 <div class="file">
-   <input type="file" id="files" name="" multiple><br>
-</div>
+                    <input type="file" id="files" name="" multiple><br>
+                 </div>
                 <div class="inputBox">
                     <input type="submit" name="" value="Send">
 
