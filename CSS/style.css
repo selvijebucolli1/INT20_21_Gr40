@@ -110,7 +110,7 @@ width: 100%;
 justify-content: space-between;
 }
 .row .col img {
-    width: 80%;
+    width: 90%;
     border-radius: 25% 10%;
     box-shadow: 10px 5px 5px grey;
     transform: rotateY(25deg);
@@ -250,4 +250,13 @@ transform: scale(1.1)
     color: #fc036b;
     box-shadow: 2px 2px 5px black;
 }
+figure {
 
+   position: relative;
+   
+   margin-right: 20px;
+}
+figcaption {
+    align-items: center;
+    display: flex;
+}
