@@ -1,0 +1,70 @@
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+    th{ 
+        color:rgb(255, 255, 255);
+            }
+</style>
+
+
+<table class="table table-striped">
+    <tr  class="bg-info">
+        <th>Name</th>
+        <th>Age</th>
+        <th>Birthday</th>
+        <th>Booking</th>
+    </tr>
+
+    <tbody id="myTable">
+        
+    </tbody>
+</table>
+
+<script>
+	var myArray = [
+	    {'name':'Michael', 'age':'30', 'birthdate':'11/10/1989', 'booking':'Dua Lipa Tour'},
+	    {'name':'Mila', 'age':'32', 'birthdate':'10/1/1989','booking':'Justin Bieber Tour'},
+	    {'name':'Paul', 'age':'29', 'birthdate':'10/14/1990','booking':'Adele Concert'},
+	    {'name':'Dennis', 'age':'25', 'birthdate':'11/29/1993','booking':'Ariana Grande Concert'},
+	    {'name':'Tim', 'age':'27', 'birthdate':'3/12/1991','booking':'Maroon 5 Concert'},
+	    {'name':'Erik', 'age':'24', 'birthdate':'10/31/1995','booking':'Dua Lipa Tour'},
+        {'name':'Lana', 'age':'37', 'birthdate':'11/10/1980', 'booking':'Dua Lipa Tour'},
+	    {'name':'Camila', 'age':'30', 'birthdate':'10/1/1992','booking':'Justin Bieber Tour'},
+	    {'name':'Damon', 'age':'29', 'birthdate':'10/14/1999','booking':'Adele Concert'},
+	    {'name':'Stiles', 'age':'24', 'birthdate':'11/29/1993','booking':'Ariana Grande Concert'},
+	    {'name':'Derek', 'age':'28', 'birthdate':'3/12/1995','booking':'Maroon 5 Concert'},
+	    {'name':'Dina', 'age':'22', 'birthdate':'10/31/1994','booking':'Dua Lipa Tour'},
+        {'name':'Louis', 'age':'29', 'birthdate':'11/10/1995', 'booking':'Dua Lipa Tour'},
+	    {'name':'Harry', 'age':'30', 'birthdate':'10/1/1999','booking':'Justin Bieber Tour'},
+	    {'name':'Richard', 'age':'21', 'birthdate':'10/14/1999','booking':'Adele Concert'},
+	    {'name':'Bob', 'age':'18', 'birthdate':'11/29/2003','booking':'Ariana Grande Concert'},
+	    {'name':'Carla', 'age':'20', 'birthdate':'3/12/1999','booking':'Maroon 5 Concert'},
+	    {'name':'Claire', 'age':'19', 'birthdate':'10/31/1990','booking':'Dua Lipa Tour'},
+	]
+	
+	buildTable(myArray)
+
+
+
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+
+		for (var i = 0; i < data.length; i++){
+			var row = `<tr>
+							<td>${data[i].name}</td>
+							<td>${data[i].age}</td>
+							<td>${data[i].birthdate}</td>
+                            <td>${data[i].booking}</td>
+					  </tr>`
+			table.innerHTML += row
+
+
+		}
+	}
+
+</script>
+</html>
