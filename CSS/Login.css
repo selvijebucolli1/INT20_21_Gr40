@@ -6,9 +6,8 @@
     font-family: sans-serif;
 }
 body{
-    background-image: url('/images/img10.jpg') ;
-
-    background-size: cover;
+    background-image:   url('/images/img10.jpg') ;
+    background-size:  cover;
     align-items: center;
     letter-spacing: 1px;
     color: white;
