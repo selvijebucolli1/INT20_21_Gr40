@@ -24,6 +24,7 @@
     transform-style: preserve-3d;
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
   }
+  
   .scope span img {
     position: absolute;
     top: 0;
