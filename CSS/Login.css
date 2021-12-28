@@ -6,6 +6,7 @@
     font-family: sans-serif;
 }
 body{
+    
     animation: move 3s infinite;
     background-size: cover;
     align-items: center;
