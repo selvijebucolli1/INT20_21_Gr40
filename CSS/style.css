@@ -117,7 +117,12 @@ justify-content: space-between;
      transform: rotateY(25deg);
      transform: rotateX(25deg) ;
     }
-
+    .row .col img {
+        transition: transform .3s ease;
+    }
+    .row .col img:hover {
+    transform: scale(1.1);
+    }
 
 .row .col {
     display: flex;
@@ -177,8 +182,7 @@ margin-top: 40px;
 .image-col {
  width: 70%;   
  margin-left: 180px;
- transform: translate3d(5px, 0.5%, 3em);
- transform: scale(1.0, 0.5);
+ transform: rotate (50deg);
 
 
 
@@ -246,12 +250,7 @@ canvas {
     margin: 20px auto;
 }
 /* Animations */
-img {
-    transition: transform .3s ease;
-}
-img:hover {
-transform: scale(1.1)
-}
+
 .ctn:hover {
     background: whitesmoke;
     color: #fc036b;
@@ -263,6 +262,7 @@ figure {
    
    margin-right: 20px;
 }
+
 figcaption {
     align-items: center;
     display: flex;
