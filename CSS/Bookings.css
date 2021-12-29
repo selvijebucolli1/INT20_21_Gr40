@@ -7,6 +7,7 @@
 }
 body{
     background-size: cover;
+    background-image: linear-gradient(rgba(36, 25, 25, 0.226),rgba(65, 11, 61, 0.719));
     align-items: center;
     letter-spacing: 1px;
     margin:0px;
@@ -43,11 +44,11 @@ body , html {
     overflow-x: hidden;
 }
 ul li a:hover{ 
-    background-color:lightblue;
+    background-color:rgb(255, 255, 255);
     color: #000;
 }
 ul li.active a{
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
     color: #000;
 }
 .js {
