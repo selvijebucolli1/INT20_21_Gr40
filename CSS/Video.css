@@ -7,6 +7,7 @@ body{
     background-image: url(../images/R3.JPG);
     background-color: pink;
     background-size: cover;
+    background-attachment: fixed;
     align-items: center;
     letter-spacing: 1px;
     color: white;
