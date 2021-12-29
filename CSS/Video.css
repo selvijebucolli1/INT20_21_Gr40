@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
+    background-image: url(../images/R3.JPG);
     background-color: pink;
     background-size: cover;
     align-items: center;
@@ -21,7 +22,7 @@ text-align: right;
     width: 100%;
     justify-content: space-between;
     padding: 20px; 
-    color: palevioletred;
+    color: rgb(80, 26, 58);
 }
 ul{
     float: right;
@@ -78,7 +79,4 @@ transform: scale(1.1)
 }
 datalist {
     display: none;
-}
-.color {
-    color: pink;
 }
