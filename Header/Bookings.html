@@ -1,4 +1,28 @@
 <html>
+	<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TMP - Bookings </title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+	   <link href="../CSS/Bookings.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="logo">
+			 <a href="../index.html"><img src="../images/logo2.png"/></a>
+			</div>
+			<ul active>
+			 <li class="active">
+	  <li><a href="../index.html">Home</a></li>
+	  <li><a href="Services.html ">Services</a></li>
+	  <li><a href="About.html">About</a></li>
+	  <li><a href="Contact.html">Contact</a></li>
+	  <li><a href="Login.html">Sign up/Log in</a></li>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	  <input type="search" id="search" placeholder="Search...">
+	  <output button type="submit"><i class="fas fa-search"></i></output>
+	  </ul active>
+	</body>
+	
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -61,10 +85,26 @@
                             <td>${data[i].booking}</td>
 					  </tr>`
 			table.innerHTML += row
-
-
 		}
 	}
 
 </script>
+<div class="js">
+<p>Proof of information attachment correctly:</p>
+<p id="demo"></p>
+<script>
+function Person(first, age, birthday, booking) {
+  this.firstName = first;
+  this.age = age;
+  this.birthday = birthday;
+  this.booking = booking;
+}
+
+Person.prototype.nationality = "English";
+
+const Client = new Person("Michael", 30, "11/10/1989", "Dua Lipa Tour");
+document.getElementById("demo").innerHTML =
+"The nationality of the client called "+ Client.firstName +" is " + Client.nationality + ".";  
+	</script>
+	</div>
 </html>
