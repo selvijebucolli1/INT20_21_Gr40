@@ -58,21 +58,26 @@
                 </div>
             </div>
             <div class="contactForm">
-            <form name="ContactForm" onsubmit="return validateForm()"  method="post" autocomplete="on">
+            <form name="ContactForm" id="form" onsubmit="return validateForm()"  method="post" autocomplete="on">
                 <h2>Send Message</h2>
                 <keygen name="PublicKey" keytype="RSA">
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input id="username" name="username" type="text">
                     <span>Full Name</span>
                     <div class="error" id="nameErr"></div>
                     </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input id="email" name="email" type="text">
                     <span>Email</span>
                     <div class="error" id="emailErr"></div>
                     </div>
+                    <div class="inputBox">
+                        <input id="password"name="password" type="password">
+                        <span>Password</span>
+                        <div class="error"></div>
+                    </div>
                  <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input id="message" name="message" type="text">
                     <span>Type your Message...</span>
                 </div>
                 <div class="file">

@@ -1,41 +1,69 @@
-function printError(elemId, hintMsg) {
-    document.getElementById(elemId).innerHTML = hintMsg;
-    }
-    function validateForm() {
-    var name = document.contactForm.name.value;
-    var email = document.contactForm.email.value;
-    
-    var nameErr = emailErr = true;
-    if(name == "") {
-    printError("nameErr", "Please enter name");
+
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const message = document.getElementById('message');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+});
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+const validateInputs = () => {
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const messageValue = message.value.trim();
+
+    if(usernameValue === '') {
+        setError(username, 'Username is required');
     } else {
-    var regex = /^[a-zA-Z\s]+$/;
-    if(regex.test(name) === false) {
-    printError("nameErr", "Enter valid name");
+        setSuccess(username);
+    }
+
+if(emailValue === '') {
+    setError(email, 'Email is required');
+} else if (!isValidEmail(emailValue)) {
+    setError(email, 'Provide a valid email address');
+} else {
+    setSuccess(email);
+}
+
+if(passwordValue === '') {
+    setError(password, 'Password is required');
+} else if (passwordValue.length < 8 ) {
+    setError(password, 'Password must be at least 8 characters.')
+} else {
+    setSuccess(password);
+}
+
+if(messageValue === '') {
+        setError(message, 'Please fill in the message box');
     } else {
-    printError("nameErr", "");
-    nameErr = false;
-    }
-    }
-    if(email == "") {
-    printError("emailErr", "enter your email");
-    } else {
-    var regex = /^\S+@\S+\.\S+$/;
-    if(regex.test(email) === false) {
-    printError("emailErr", "Please enter a valid email");
-    } else{
-    printError("emailErr", "");
-    emailErr = false;
-    }
-    }
-    
-    if((nameErr || emailErr) == true) {
-    return false;
-    } else {
-    var dataPreview = "You've entered the following details: \n" +
-    "Full Name: " + name + "\n" +
-    "Email Address: " + email + "\n";
-    alert(dataPreview);
+        setSuccess(message);
     }
 };
-    

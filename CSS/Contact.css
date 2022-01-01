@@ -138,7 +138,7 @@ font-size: 22px;
 {
     width: 40%;
     padding: 40px;
-    background:white;
+    background:rgba(250, 246, 246, 0.836);
 }
 .contactForm h2
 {
@@ -156,13 +156,20 @@ font-size: 22px;
 .contactForm .inputBox textarea
 {
     width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
+    padding: 5px 5px 5px;
+    font-size: 12px;
     margin: 10px 0;
     border: none;
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
+}
+#message {
+    width: 100%;
+    padding: 5px 0;
+    padding-bottom: 50px;
+
+
 }
 .contactForm .inputBox span
 {
@@ -180,7 +187,7 @@ font-size: 22px;
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span
 {
-    color: #e91e63;
+    color: #000000;
     font-size: 12px;
     transform: translateY(-20px);
 }
@@ -226,4 +233,36 @@ transform: scale(1.1)
     background: whitesmoke;
     color: #fc036b;
     box-shadow: 2px 2px 5px black;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.inputBox input:focus {
+    outline: 0;
+}
+
+.inputBox.success input {
+    
+    border-color: #09c372;
+}
+.inputBox.error input {
+    border-color: #ff3860;
+}
+
+.inputBox .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
 }
