@@ -163,6 +163,7 @@ font-size: 22px;
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
+    outline-offset: 0px;
 }
 #message {
     width: 100%;
