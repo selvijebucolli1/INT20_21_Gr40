@@ -105,6 +105,30 @@ We will send you the details of any orders linked to that email which will then 
  <p>Please check the booking page for the event as there may be an option to add tickets to your previous order. If this option is not available for the event you have booked for then tickets will need to be purchased as a new transaction.</p>
  </details>
  </div>
+ <details>
+ <summary id="demo1">Click the button to get your coordinates.</summary>
+ <p id="demo"></p>
+</details>
+
+ <button id="demo2" onclick="getLocation()">Allow Location</button>
+ 
+ <script>
+ var x = document.getElementById("demo");
+ 
+ function getLocation() {
+   if (navigator.geolocation) {
+     navigator.geolocation.getCurrentPosition(showPosition);
+   } else { 
+     x.innerHTML = "Geolocation is not supported by this browser.";
+   }
+ }
+ 
+ function showPosition(position) {
+   x.innerHTML = "Latitude: " + position.coords.latitude + 
+   "<br>Longitude: " + position.coords.longitude;
+ }
+ </script>
+
     <footer>
         <table style="width:100%">
             <tr style="height:80px">
