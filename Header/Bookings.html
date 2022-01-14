@@ -19,13 +19,20 @@
 			});
 		});
 			</script>
-			<script>
-				$(document).ready(function(){
-				  $("button").click(function(){
-					$("#div1").remove();
-				  });
-				});
-				</script>
+				<script>
+					$(document).ready(function(){
+					  $("#btn3").click(function(){
+						$("p").prepend("<b>Prepended text</b>. ");
+					  });
+					});
+</script>
+<script>
+    $(document).ready(function(){
+      $("#btn4").click(function(){
+      $("#div1").remove();
+      });
+    });
+    </script>
 	</head>
 	<body>
 		<nav class="navbar">
@@ -112,6 +119,7 @@
 
 </script>
 <div class="js">
+	<div id="div1">
 <p>Proof of information attachment correctly:</p>
 <p id="demo"></p>
 <script>
@@ -128,11 +136,11 @@ const Client = new Person("Michael", 30, "11/10/1989", "Dua Lipa Tour");
 document.getElementById("demo").innerHTML =
 "The nationality of the client called "+ Client.firstName +" is " + Client.nationality + ".";  
 	</script>
-	<div id="div1">
 	<p id="test">If you want more details on your <b>booking</b> contact us via the Contact page.</p> </div>
 	<button id="btn1">Show HTML</button>
 	<button id="btn2">Set HTML</button>
-	<button>Remove div element</button>
-	</div>
+	<button id="btn3">Prepend text</button>
+	<button id="btn4">Remove div element</button>
 
+</div>
 </html>
