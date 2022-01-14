@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TMP - Login</title>
    <link rel="stylesheet" type="text/css" href="../CSS/Login.css">
+   <script src="../javascript/external.js"> </script>
    </head>
    
    
@@ -55,8 +56,55 @@
          </div>
          </div>
         </div>
+        <footer>Time remaining: <span id="countdown"></span></footer>
+        <script>
+        function countdown(elementName, minutes, seconds) {
+          let element, endTime, hours, mins, msLeft, time;
+      
+          function twoDigits(n) {
+              return (n <= 9 ? '0' + n : n);
+          }
+      
+          function updateTimer() {
+              msLeft = endTime - (+new Date);
+      
+              if (msLeft < 1000) {
+                  element.innerHTML = '0:00';
+              } else {
+                  time = new Date(msLeft);
+                  hours = time.getUTCHours();
+                  mins = time.getUTCMinutes();
+                  element.innerHTML = (hours ? hours + ':' + twoDigits(mins) : mins) + ':' + twoDigits(time.getUTCSeconds());
+      
+                  // Save current time locally
+                  localStorage.setItem('lastHValue', hours);
+                  localStorage.setItem('lastMValue', mins);
+                  localStorage.setItem('lastSValue', time.getUTCSeconds());
+      
+                  setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
+              }
+          }
+      
+          element = document.getElementById(elementName);
+          endTime = (+new Date) +(60*minutes + seconds) + 500;
+      
+          updateTimer();
+      }
+      
+      if (localStorage.getItem('lastHValue')) {
+          let lastHValue = parseInt(localStorage.getItem('lastHValue')),
+              lastMValue = parseInt(localStorage.getItem('lastMValue')),
+              lastSValue = parseInt(localStorage.getItem('lastSValue'));
+      
+          let totalMValue = parseInt((lastHValue * 60) + lastMValue);
+      
+          countdown('countdown', totalMValue, lastSValue);
+      } else {
+          countdown('countdown', 1, 5 );
+      }
+    </script>
 
-<script src="../javascript/external.js"> </script>
+
      </div> 
     
    </body>
