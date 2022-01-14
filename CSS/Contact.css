@@ -267,3 +267,15 @@ transform: scale(1.1)
     font-size: 9px;
     height: 13px;
 }
+
+#countdown  {
+
+    left: 0;
+    padding: 5px 15px;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+}
