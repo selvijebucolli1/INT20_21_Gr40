@@ -8,13 +8,17 @@
 	   <script>
 	   $(document).ready(function(){
 		 $("#btn1").click(function(){
-		   alert("Text: " + $("#test").text());
-		 });
-		 $("#btn2").click(function(){
 		   alert("HTML: " + $("#test").html());
 		 });
 	   });
 	   </script>
+		 <script>
+		  $(document).ready(function(){
+			$("#btn2").click(function(){
+			  $("#test").html("If you want more details on your <b>booking</b> contact us.");
+			});
+		});
+			</script>
 	</head>
 	<body>
 		<nav class="navbar">
@@ -118,6 +122,7 @@ document.getElementById("demo").innerHTML =
 "The nationality of the client called "+ Client.firstName +" is " + Client.nationality + ".";  
 	</script>
 	<p id="test">If you want more details on your <b>booking</b> contact us via the Contact page.</p>
-	<button id="btn2">Show HTML</button>
+	<button id="btn1">Show HTML</button>
+	<button id="btn2">Set HTML</button>
 	</div>
 </html>
