@@ -7,7 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TMP - Video </title>
    <link rel="stylesheet" type="text/css" href="../CSS/Video.css">
-   <style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+   <script>
+  $(document).ready(function(){
+    $("button").click(function(){
+    $("video").hide("slow", function(){
+      alert("The video is now hidden");
+    });
+    });
+  });
+  </script>
+  <style>
     #div1, #div2 {
       float: left;
       width: 100px;
@@ -80,13 +90,14 @@
   document.write( "<h1>Good Evening, please find attached the video down below:" );
   }
   </script>
+  	<button>Hide</button>
 <div class="video">
 <video controls width=1000>
   <source src="../video/video.mp4" type="video/mp4">
   Your browser does not support the video element.
   </video>
+</div>
 </nav>
-  </div>
 </div>
 
 
